@@ -1,6 +1,6 @@
 # Global AI Scaling Readiness Copilot
 
-A lightweight interview-learning prototype that models readiness to introduce a new rack-scale AI platform across a synthetic global datacenter footprint.
+A lightweight v1 prototype that models readiness to introduce a new rack-scale AI platform across a synthetic global datacenter footprint.
 
 ## What it demonstrates
 
@@ -14,10 +14,10 @@ A lightweight interview-learning prototype that models readiness to introduce a 
 ## Architecture
 
 ```text
-Synthetic platform + site data
+platform + site data (synthetic)
             |
             v
-Deterministic Python readiness engine
+Deterministic Python readiness engine (Go/No-go)
           /   \
          /     \
  Streamlit UI   MCP tools
@@ -39,7 +39,7 @@ streamlit run app.py
 
 ## Data
 
-All site data is synthetic and non-confidential. The Vera Rubin values used in the readiness model include simplified prototype assumptions for interview learning and should not be interpreted as Microsoft design requirements.
+All site data is synthetic and non-confidential. The Vera Rubin values used in the readiness model include simplified prototype assumptions. 
 
 ## Optional MCP demo
 
@@ -55,6 +55,3 @@ The server exposes:
 - `assess_site_readiness(site_id, platform_id)`
 - `rank_rollout_sites(platform_id)`
 
-## V1 scope
-
-This is intentionally small. It does not connect to production systems, implement real-time telemetry, or perform datacenter engineering design.
