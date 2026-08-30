@@ -122,7 +122,7 @@ st.info("Baseline review — no prior snapshot available.")
 # VERA RUBIN PLATFORM CONTEXT
 # ---------------------------------------------------------
 
-st.subheader("Vera Rubin NVL72 — Platform Context")
+st.subheader("Vera Rubin NVL72 - Platform Context")
 
 st.caption(
     "What changes with the platform, and what that means for site readiness."
@@ -144,12 +144,12 @@ That shifts readiness from having individual components available to having the
         },
         {
             "Platform change": "Higher rack power density",
-            "Readiness implication": "Validate usable power at the rack, including the distribution path. 800V DC is an emerging architecture for higher-density AI facilities, not a V1 gate in this model.",
+            "Readiness implication": "Validate usable power at the rack, including the distribution path. 800V DC is an emerging architecture.",
             "Primary gates": "POWER",
         },
         {
             "Platform change": "Direct liquid cooling",
-            "Readiness implication": "Confirm the full thermal path can support the rack — cold plates, rack plumbing, CDU / facility cooling and operating procedures.",
+            "Readiness implication": "Confirm the full thermal path can support the rack — cold plates, rack plumbing, CDU, facility cooling and Ops.",
             "Primary gates": "COOLING · OPERATIONS",
         },
         {
@@ -169,11 +169,6 @@ That shifts readiness from having individual components available to having the
         use_container_width=True,
         hide_index=True,
     )
-
-    st.info(
-        "Program view: the objective is to identify where a new platform can be "
-        "brought online safely and quickly, and where infrastructure or qualification "
-        "dependencies need leadership attention."
     )
 
 st.caption(
