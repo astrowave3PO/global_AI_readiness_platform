@@ -56,7 +56,7 @@ def blocker_owners(site):
 # ---------- Header ----------
 st.title("Global AI Platform Readiness")
 st.caption(
-    "Vera Rubin NVL72 | V1 interview prototype | Synthetic / non-confidential site data"
+    "Vera Rubin NVL72 | V1 prototype | Synthetic / non-confidential site data"
 )
 
 m1, m2, m3, m4 = st.columns(4)
