@@ -118,6 +118,72 @@ st.subheader("Changes since last review")
 st.info("Baseline review — no prior snapshot available.")
 
 
+# ---------------------------------------------------------
+# VERA RUBIN PLATFORM CONTEXT
+# ---------------------------------------------------------
+
+st.subheader("Vera Rubin NVL72 — Platform Context")
+
+st.caption(
+    "What changes with the platform, and what that means for site readiness."
+)
+
+with st.expander("Why Vera Rubin changes the readiness bar", expanded=True):
+
+    st.markdown("""
+Vera Rubin is introduced as a **rack-scale AI system**, not simply as a GPU refresh.
+That shifts readiness from having individual components available to having the
+**full rack, facility and operational path ready together**.
+""")
+
+    platform_context = [
+        {
+            "Platform change": "Rack-scale system",
+            "Readiness implication": "A complete, qualified rack becomes the deployment unit — server availability alone is not enough.",
+            "Primary gates": "SUPPLY · PLATFORM",
+        },
+        {
+            "Platform change": "Higher rack power density",
+            "Readiness implication": "Validate usable power at the rack, including the distribution path. 800V DC is an emerging architecture for higher-density AI facilities, not a V1 gate in this model.",
+            "Primary gates": "POWER",
+        },
+        {
+            "Platform change": "Direct liquid cooling",
+            "Readiness implication": "Confirm the full thermal path can support the rack — cold plates, rack plumbing, CDU / facility cooling and operating procedures.",
+            "Primary gates": "COOLING · OPERATIONS",
+        },
+        {
+            "Platform change": "NVLink scale-up + scale-out fabric",
+            "Readiness implication": "Installed networking is not sufficient; topology and end-to-end connectivity need to be qualified before capacity is released.",
+            "Primary gates": "NETWORK",
+        },
+        {
+            "Platform change": "Integrated platform qualification",
+            "Readiness implication": "Hardware onsite does not equal usable capacity. Platform validation, firmware, health checks and operating readiness must close before deployment.",
+            "Primary gates": "PLATFORM · OPERATIONS",
+        },
+    ]
+
+    st.dataframe(
+        platform_context,
+        use_container_width=True,
+        hide_index=True,
+    )
+
+    st.info(
+        "Program view: the objective is to identify where a new platform can be "
+        "brought online safely and quickly, and where infrastructure or qualification "
+        "dependencies need leadership attention."
+    )
+
+st.caption(
+    "Prototype note: site data, deployment dates and the 200 kW/rack threshold are "
+    "assumptions. Public Vera Rubin architecture is used only to frame the readiness model."
+)
+
+
+
+
 # ---------- Readiness matrix ----------
 st.subheader("Readiness matrix")
 
