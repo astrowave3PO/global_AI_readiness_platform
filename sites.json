@@ -1,0 +1,155 @@
+[
+  {
+    "site_id": "PHX",
+    "program_priority": 4,
+    "planned_deploy_date": "2026-10-12",
+    "power": {
+      "usable_power_kw_per_rack": 230
+    },
+    "cooling": {
+      "usable_cooling_kw_per_rack": 220
+    },
+    "network": {
+      "network_qualified": true
+    },
+    "supply": {
+      "complete_racks_available": 10
+    },
+    "platform": {
+      "platform_qualified": true
+    },
+    "operations": {
+      "ops_ready": true
+    },
+    "blockers": []
+  },
+  {
+    "site_id": "DUB",
+    "program_priority": 5,
+    "planned_deploy_date": "2026-10-19",
+    "power": {
+      "usable_power_kw_per_rack": 215
+    },
+    "cooling": {
+      "usable_cooling_kw_per_rack": 205
+    },
+    "network": {
+      "network_qualified": true
+    },
+    "supply": {
+      "complete_racks_available": 8
+    },
+    "platform": {
+      "platform_qualified": true
+    },
+    "operations": {
+      "ops_ready": true
+    },
+    "blockers": []
+  },
+  {
+    "site_id": "IAD",
+    "program_priority": 5,
+    "planned_deploy_date": "2026-10-26",
+    "power": {
+      "usable_power_kw_per_rack": 220
+    },
+    "cooling": {
+      "usable_cooling_kw_per_rack": 215
+    },
+    "network": {
+      "network_qualified": false
+    },
+    "supply": {
+      "complete_racks_available": 8
+    },
+    "platform": {
+      "platform_qualified": true
+    },
+    "operations": {
+      "ops_ready": true
+    },
+    "blockers": [
+      {
+        "gate": "NETWORK",
+        "description": "Scale-out topology qualification incomplete.",
+        "owner": "Network Engineering",
+        "target_resolution_date": "2026-10-24"
+      }
+    ]
+  },
+  {
+    "site_id": "AMS",
+    "program_priority": 3,
+    "planned_deploy_date": "2026-11-16",
+    "power": {
+      "usable_power_kw_per_rack": 160
+    },
+    "cooling": {
+      "usable_cooling_kw_per_rack": 210
+    },
+    "network": {
+      "network_qualified": true
+    },
+    "supply": {
+      "complete_racks_available": 4
+    },
+    "platform": {
+      "platform_qualified": true
+    },
+    "operations": {
+      "ops_ready": true
+    },
+    "blockers": [
+      {
+        "gate": "POWER",
+        "description": "Rack-level usable power is below the prototype requirement.",
+        "owner": "Electrical Engineering",
+        "target_resolution_date": "2026-11-01"
+      },
+      {
+        "gate": "SUPPLY",
+        "description": "Four remaining complete racks are delayed.",
+        "owner": "Supply Chain",
+        "target_resolution_date": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "site_id": "SIN",
+    "program_priority": 4,
+    "planned_deploy_date": "2026-10-26",
+    "power": {
+      "usable_power_kw_per_rack": 215
+    },
+    "cooling": {
+      "usable_cooling_kw_per_rack": 210
+    },
+    "network": {
+      "network_qualified": true
+    },
+    "supply": {
+      "complete_racks_available": 8
+    },
+    "platform": {
+      "platform_qualified": false
+    },
+    "operations": {
+      "ops_ready": false
+    },
+    "blockers": [
+      {
+        "gate": "PLATFORM",
+        "description": "Vera Rubin platform qualification incomplete.",
+        "owner": "Platform Engineering",
+        "target_resolution_date": "2026-10-07"
+      },
+      {
+        "gate": "OPERATIONS",
+        "description": "Operations training and runbook readiness incomplete.",
+        "owner": "Datacenter Operations",
+        "target_resolution_date": "2026-10-10"
+      }
+    ]
+  }
+]

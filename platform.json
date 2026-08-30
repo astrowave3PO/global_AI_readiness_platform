@@ -1,0 +1,25 @@
+{
+  "platform_id": "VERA_RUBIN_NVL72",
+  "platform_name": "NVIDIA Vera Rubin NVL72",
+  "prototype_note": "Interview-learning prototype using synthetic/non-confidential site data and simplified readiness assumptions.",
+  "requirements": {
+    "power": {
+      "required_usable_power_kw_per_rack": 200
+    },
+    "cooling": {
+      "required_usable_cooling_kw_per_rack": 200
+    },
+    "network": {
+      "network_qualified_required": true
+    },
+    "supply": {
+      "required_complete_racks": 8
+    },
+    "platform": {
+      "platform_qualified_required": true
+    },
+    "operations": {
+      "ops_ready_required": true
+    }
+  }
+}
