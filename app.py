@@ -169,7 +169,6 @@ That shifts readiness from having individual components available to having the
         use_container_width=True,
         hide_index=True,
     )
-    )
 
 st.caption(
     "Prototype note: site data, deployment dates and the 200 kW/rack threshold are "
